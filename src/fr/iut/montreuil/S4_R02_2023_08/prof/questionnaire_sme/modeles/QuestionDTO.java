@@ -1,4 +1,4 @@
-package fr.iut.montreuil.S4_R02_08.prof.questionnaire_sme.modeles;
+package fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.modeles;
 
 public class QuestionDTO {
 	private int idQuestion, idQuestionnaire, dificulte;
