@@ -25,7 +25,7 @@ public class QuestionnaireBO {
         this.nomFichier = nomFichier;
 
         CSVParser parser = new CSVParserBuilder().withSeparator(separateur).build();
-		CSVReader reader = new CSVReaderBuilder(new FileReader("src/fr/iut/montreuil/S04_R02_2023_08/prof/questionnaire_sme/resources/" + nomFichier))
+		CSVReader reader = new CSVReaderBuilder(new FileReader("C:\\Users\\solen\\OneDrive\\Documents\\GitHub\\S4-R02-2023_08_QuiQuiz_Questionnaire-sme\\src\\fr\\iut\\montreuil\\S4_R02_2023_08\\prof\\questionnaire_sme\\ressources\\" + nomFichier))
 		        .withCSVParser(parser)
 		        .build();
 

@@ -1,8 +1,8 @@
 package fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto;
 
 public class QuestionDTO {
-	private int idQuestion, idQuestionnaire, dificulte;
-	private String langue, question, reponse,explication, reference;
+	private int numQuestion, idQuestionnaire, dificulte;
+	private String langue, libelleQuestion, reponse,explication, reference;
 	
 /*	public QuestionDTO1(int idQuestionnaire, int idQuestion, String langue,  String question,
 			String reponse,int dificulte, String explication, String reference) {
@@ -17,36 +17,36 @@ public class QuestionDTO {
 		this.reference = reference;
 	}
 	*/
-	public QuestionDTO(String[] rawQuestion) {
-		this.idQuestionnaire=Integer.parseInt(rawQuestion[0]);
-		this.idQuestion=Integer.parseInt(rawQuestion[1]);
-        this.langue=rawQuestion[2];
-        this.question=rawQuestion[3];
-        this.reponse=rawQuestion[4];
-        this.dificulte=Integer.parseInt(rawQuestion[5]);
-        this.explication=rawQuestion[6];
-        this.reference=rawQuestion[7];
+	public QuestionDTO(String[] questions) {
+		this.idQuestionnaire=Integer.parseInt(questions[0]);
+		this.numQuestion=Integer.parseInt(questions[1]);
+        this.langue=questions[2];
+        this.libelleQuestion=questions[3];
+        this.reponse=questions[4];
+        this.dificulte=Integer.parseInt(questions[5]);
+        this.explication=questions[6];
+        this.reference=questions[7];
         
         }
 
 	public QuestionDTO(int idQuestionnaire2, int idQuestion2, String langue2, String question2, String reponse2,
 			int dificulte2, String explication2, String reference2) {
-		this.idQuestion = idQuestion2;
+		this.numQuestion = idQuestion2;
 		this.idQuestionnaire = idQuestionnaire2;
 		this.dificulte = dificulte2;
 		this.langue = langue2;
-		this.question = question2;
+		this.libelleQuestion = question2;
 		this.reponse = reponse2;
 		this.explication = explication2;
 		this.reference = reference2;	
 	}
 
-	public int getIdQuestion() {
-		return idQuestion;
+	public int getNumQuestion() {
+		return numQuestion;
 	}
 	
-	public void setIdQuestion(int idQuestion) {
-		this.idQuestion = idQuestion;
+	public void setNumQuestion(int idQuestion) {
+		this.numQuestion = idQuestion;
 	}
 	public int getIdQuestionnaire() {
 		return idQuestionnaire;
@@ -66,19 +66,19 @@ public class QuestionDTO {
 	public void setLangue(String langue) {
 		this.langue = langue;
 	}
-	public String getQuestion() {
-		return question;
+	public String getLibelleQuestion() {
+		return libelleQuestion;
 	}
-	public void setQuestion(String question) {
-		this.question = question;
+	public void setLibelleQuestion(String question) {
+		this.libelleQuestion = question;
 	}
 	public String getReponse() {
 		return reponse;
 	}
 	@Override
 	public String toString() {
-		return "QuestionDTO [idQuestion=" + idQuestion + ", idQuestionnaire=" + idQuestionnaire + ", dificulte="
-				+ dificulte + ", langue=" + langue + ", question=" + question + ", reponse=" + reponse
+		return "QuestionDTO [idQuestion=" + numQuestion + ", idQuestionnaire=" + idQuestionnaire + ", dificulte="
+				+ dificulte + ", langue=" + langue + ", question=" + libelleQuestion + ", reponse=" + reponse
 				+ ", explication=" + explication + ", reference=" + reference + "]";
 	}
 

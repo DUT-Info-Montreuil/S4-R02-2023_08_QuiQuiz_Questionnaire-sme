@@ -54,7 +54,7 @@ class ChargementQuestionnaireTest {
 		this.questionnaireTest = new QuestionnaireDTO(this.listeQuestionsTest, 1);
 		this.questionnaireBO = new QuestionnaireBO("testChargementQuestionCorrect.csv", ';');
 		assertEquals(this.questionnaireTest.getIdQuestionnaire(), this.questionnaire.getIdQuestionnaire());
-		assertEquals(this.questionnaireTest.getQuestions().get(0).getQuestion(), this.questionnaire.getQuestions().get(0).getQuestion());
+		assertEquals(this.questionnaireTest.getQuestions().get(0).getLibelleQuestion(), this.questionnaire.getQuestions().get(0).getLibelleQuestion());
 
 		//assertEquals(this.questionnaireTest.getIdQuestionnaire(), this.questionnaire.getIdQuestionnaire());
 	
@@ -74,7 +74,7 @@ class ChargementQuestionnaireTest {
 		this.questionnaireTest = new QuestionnaireDTO(this.listeQuestionsTest, 1);
 		this.questionnaireBO = new QuestionnaireBO("testChargementQuestionIncorrect.csv", ';');
 		assertEquals(this.questionnaireTest.getIdQuestionnaire(), this.questionnaire.getIdQuestionnaire());
-		assertEquals(this.questionnaireTest.getQuestions().get(0).getQuestion(), this.questionnaire.getQuestions().get(0).getQuestion());
+		assertEquals(this.questionnaireTest.getQuestions().get(0).getLibelleQuestion(), this.questionnaire.getQuestions().get(0).getLibelleQuestion());
 	
 	}
 	@Test
@@ -89,7 +89,7 @@ class ChargementQuestionnaireTest {
 		this.questionnaireTest = new QuestionnaireDTO(this.listeQuestionsTest, 1);
 		this.questionnaireBO = new QuestionnaireBO("testChargementQuestionVide.csv", ';');
 		assertEquals(this.questionnaireTest.getIdQuestionnaire(), this.questionnaire.getIdQuestionnaire());
-		assertEquals(this.questionnaireTest.getQuestions().get(0).getQuestion(), this.questionnaire.getQuestions().get(0).getQuestion());
+		assertEquals(this.questionnaireTest.getQuestions().get(0).getLibelleQuestion(), this.questionnaire.getQuestions().get(0).getLibelleQuestion());
 	
 	}
 	
