@@ -7,6 +7,7 @@ import java.util.List;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.bo.QuestionnaireBO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionnaireDTO;
+import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.StatsQuestionDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierIncorrectExceptions;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierPasTrouveExceptions;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierVideExceptions;
@@ -39,7 +40,7 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
     }
 
     @Override
-    public void maJStatQuestion(QuestionDTO qDTO) {
+    public List<StatsQuestionDTO> maJStatQuestion(QuestionnaireDTO qDTO) {
     }
 
     
@@ -50,8 +51,8 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
     }
 
     @Override
-    public String fournirStatQuestion(QuestionDTO question) {
-        return question.toString();
+    public List<StatsQuestionDTO> fournirStatQuestion(QuestionnaireDTO question) {
+        
     }
     
 	
