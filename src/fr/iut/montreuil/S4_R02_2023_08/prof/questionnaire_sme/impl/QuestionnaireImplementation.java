@@ -51,7 +51,13 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
     }
 
     @Override
-    public List<StatsQuestionDTO> fournirStatQuestion(QuestionnaireDTO question) {
+    public List<StatsQuestionDTO> fournirStatQuestion(QuestionnaireDTO qDTO) {
+    	List<StatsQuestionDTO> statsQuestions = new ArrayList<StatsQuestionDTO>();
+    	for(QuestionDTO question : qDTO.getQuestions()) {
+    		StatsQuestionDTO stats = new StatsQuestionDTO(question.getNumQuestion());
+    		statsQuestions.add(stats);
+    	}
+    	return statsQuestions;
         
     }
     

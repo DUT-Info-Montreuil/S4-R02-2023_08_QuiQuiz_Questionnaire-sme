@@ -6,13 +6,15 @@ public class StatsQuestionDTO {
 	private int nbBonnesReponses;
 	private int nbMauvaisesReponses;
 	private int nbReponsesNulles;
+	private int nbFoisQuestionJouee;
 	
-	public StatsQuestionDTO(int idQuestion, int nbBonnesReponses, int nbMauvaisesReponses, int nbReponsesNulles) {
+	public StatsQuestionDTO(int idQuestion) {
 		super();
 		this.idQuestion = idQuestion;
-		this.nbBonnesReponses = nbBonnesReponses;
-		this.nbMauvaisesReponses = nbMauvaisesReponses;
-		this.nbReponsesNulles = nbReponsesNulles;
+		this.nbBonnesReponses = 0;
+		this.nbMauvaisesReponses = 0;
+		this.nbReponsesNulles = 0;
+		this.nbFoisQuestionJouee = 0;
 	}
 	public int getIdQuestion() {
 		return idQuestion;
