@@ -6,9 +6,10 @@ import java.util.List;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.bo.QuestionnaireBO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionnaireDTO;
+import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.StatsQuestionDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.modeles.ServiceQuestionnaire;
 
-public class ServiceQuestionnaireNomInvalideMock implements ServiceQuestionnaire {
+public abstract class ServiceQuestionnaireNomInvalideMock implements ServiceQuestionnaire {
 	public List<QuestionnaireDTO> chargerListeQuestionnaire(String nomFichier) {
         return null;
     }
@@ -30,16 +31,13 @@ public class ServiceQuestionnaireNomInvalideMock implements ServiceQuestionnaire
 	}
 
 	@Override
-	public void maJStatQuestion(QuestionDTO q) {
+	public List<StatsQuestionDTO> maJStatQuestion(QuestionnaireDTO qDTO) {
+		return null;
 		// TODO Auto-generated method stub
 		
 	}
 
-	@Override
-	public String fournirStatQuestion(QuestionDTO q) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Override
 	public void ajouterQuestionnaire(QuestionnaireBO bo, int index) {

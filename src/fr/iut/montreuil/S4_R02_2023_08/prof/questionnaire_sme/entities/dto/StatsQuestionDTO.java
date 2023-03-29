@@ -16,6 +16,8 @@ public class StatsQuestionDTO {
 		this.nbReponsesNulles = 0;
 		this.nbFoisQuestionJouee = 0;
 	}
+	
+	
 	public int getIdQuestion() {
 		return idQuestion;
 	}

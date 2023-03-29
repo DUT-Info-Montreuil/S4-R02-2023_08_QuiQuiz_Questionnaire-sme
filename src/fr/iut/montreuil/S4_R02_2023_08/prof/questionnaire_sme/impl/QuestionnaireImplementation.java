@@ -41,6 +41,7 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
 
     @Override
     public List<StatsQuestionDTO> maJStatQuestion(QuestionnaireDTO qDTO) {
+		return null;
     }
 
     
