@@ -8,6 +8,7 @@ import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.bo.Questi
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.QuestionnaireDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.StatsQuestionDTO;
+import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.entities.dto.StatsQuestionnaireDTO;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierIncorrectExceptions;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierPasTrouveExceptions;
 import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.FichierVideExceptions;
@@ -40,8 +41,8 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
     }
 
     @Override
-    public List<StatsQuestionDTO> maJStatQuestion(QuestionnaireDTO qDTO) {
-		return null;
+    public boolean maJStatQuestionnaire(int idQuestionnaire) {
+		return true;
     }
 
     
@@ -52,14 +53,10 @@ public class QuestionnaireImplementation implements ServiceQuestionnaire {
     }
 
     @Override
-    public List<StatsQuestionDTO> fournirStatQuestion(QuestionnaireDTO qDTO) {
-    	List<StatsQuestionDTO> statsQuestions = new ArrayList<StatsQuestionDTO>();
-    	for(QuestionDTO question : qDTO.getQuestions()) {
-    		StatsQuestionDTO stats = new StatsQuestionDTO(question.getNumQuestion());
-    		statsQuestions.add(stats);
-    	}
-    	return statsQuestions;
-        
+    public StatsQuestionnaireDTO fournirStatQuestionnaire (int idQuestionnaire) {
+    	//StatsQuestionnaireDTO stq = new StatsQuestionnaireDTO();
+
+     
     }
     
 	
