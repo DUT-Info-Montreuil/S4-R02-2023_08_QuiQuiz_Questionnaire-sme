@@ -15,7 +15,7 @@ import fr.iut.montreuil.S4_R02_2023_08.prof.questionnaire_sme.exceptions.Fichier
 public interface ServiceQuestionnaire {
 	public ArrayList<QuestionnaireDTO> fournirListeQuestionnaire ();
     public QuestionnaireDTO FournirUnQuestionnaire (int i);
-    public StatsQuestionnaireDTO maJStatQuestionnaire(int idQuestionnaire);
+    public boolean maJStatQuestionnaire(int idQuestionnaire);
     public StatsQuestionnaireDTO fournirStatQuestionnaire(int idQuestionnaire);
     public void ajouterQuestionnaire(QuestionnaireBO bo, int index);
 	
