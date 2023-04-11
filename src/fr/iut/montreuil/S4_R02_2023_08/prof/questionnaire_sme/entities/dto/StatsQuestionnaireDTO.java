@@ -19,10 +19,10 @@ public class StatsQuestionnaireDTO {
 		this.statsQuestions = statsQuestions;
 	}
 
-	public StatsQuestionnaireDTO(int idQuestionnaire, int nbPartiesJouees, List<StatsQuestionDTO> statsQuestions) {
+	public StatsQuestionnaireDTO(int idQuestionnaire,List<StatsQuestionDTO> statsQuestions) {
 		super();
 		this.idQuestionnaire = idQuestionnaire;
-		this.nbPartiesJouees = nbPartiesJouees;
+		this.nbPartiesJouees = 0;
 		this.statsQuestions = statsQuestions;
 	}
 	
